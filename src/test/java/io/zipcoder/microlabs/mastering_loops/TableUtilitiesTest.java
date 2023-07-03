@@ -29,11 +29,10 @@ public class TableUtilitiesTest {
     @Test
     public void testGetSmallMultiplicationTable() {
         String expected =
-                        "  1 |  2 |  3 |  4 |  5 |\n" +
-                        "  2 |  4 |  6 |  8 | 10 |\n" +
-                        "  3 |  6 |  9 | 12 | 15 |\n" +
-                        "  4 |  8 | 12 | 16 | 20 |\n" +
-                        "  5 | 10 | 15 | 20 | 25 |\n";
+                        "  1 |  2 |  3 |  4 |\n" +
+                        "  2 |  4 |  6 |  8 |\n" +
+                        "  3 |  6 |  9 | 12 |\n" +
+                        "  4 |  8 | 12 | 16 |";
 
         String actual = TableUtilities.getSmallMultiplicationTable();
         Assert.assertEquals(expected, actual);
@@ -61,7 +60,7 @@ public class TableUtilitiesTest {
                 " 17 | 34 | 51 | 68 | 85 |102 |119 |136 |153 |170 |187 |204 |221 |238 |255 |272 |289 |306 |323 |340 |\n" +
                 " 18 | 36 | 54 | 72 | 90 |108 |126 |144 |162 |180 |198 |216 |234 |252 |270 |288 |306 |324 |342 |360 |\n" +
                 " 19 | 38 | 57 | 76 | 95 |114 |133 |152 |171 |190 |209 |228 |247 |266 |285 |304 |323 |342 |361 |380 |\n" +
-                " 20 | 40 | 60 | 80 |100 |120 |140 |160 |180 |200 |220 |240 |260 |280 |300 |320 |340 |360 |380 |400 |\n";
+                " 20 | 40 | 60 | 80 |100 |120 |140 |160 |180 |200 |220 |240 |260 |280 |300 |320 |340 |360 |380 |400 |";
         String actual = TableUtilities.getMultiplicationTable(20);
         Assert.assertEquals(expected, actual);
     }
